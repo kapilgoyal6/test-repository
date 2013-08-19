@@ -1,0 +1,64 @@
+.row{:style => 'margin-top:5%'}
+  .row{:style => 'border-bottom:1px solid #eee;padding:1%'}
+    .col-lg-4
+      .thumbnail.layers.normalize-layer{:style => 'min-height:250px;border:none;border-right:;border-radius:0;padding-right:10%;background:#f9f9f9'}
+        -#%img{:alt => "...", "data-src" => "holder.js/300x200"}/
+        .caption{:style => ';padding:10%'}
+          %h2{:style => 'margin-top:0;color:#3276b1;font-weight:200;text-shadow:0 1px 2px #191A1B, 0 1px 0 #191A1B'}
+            %span.entypo-briefcase
+            Job Seekers
+          %p{:style => 'font-weight:300;font-size:20px'} Our focus is to find the best- matched candidates for each job & best-matched job for each candidate.
+          %p
+            %a.btn.btn-primary{:href => "/seekers", :style => 'margin-top:23%;;float:right;margin-right:-27%'}
+              Read More
+              %span.entypo-right-open
+    .col-lg-4
+      .thumbnail.layers.normalize-layer{:style => 'min-height:250px;border:none;border-right:;border-radius:0;padding-right:10%;background:#f9f9f9'}
+        -#%img{:alt => "...", "data-src" => "holder.js/300x200"}/
+        .caption{:style => ';padding:10%'}
+          %h2{:style => 'margin-top:0;color:#3276b1;font-weight:200;text-shadow:0 1px 2px #191A1B, 0 1px 0 #191A1B'}
+            %span.glyphicon.glyphicon-flag
+            Employers
+          %p{:style => 'font-weight:300;font-size:20px'} Whether the need is for a single individual for a short period of time or personnel for on- going employment.
+          %p
+            %a.btn.btn-primary{:href => "/employers", :style => 'margin-top:25%;;float:right;margin-right:-27%'}
+              Read More
+              %span.entypo-right-open
+    .col-lg-4
+      .thumbnail.layers.normalize-layer{:style => 'min-height:250px;border:none;background:#f9f9f9'}
+        -#%img{:alt => "...", "data-src" => "holder.js/300x200"}/
+        .caption{:style => 'padding:10%;padding-bottom:16%'}
+          %h2{:style => 'margin-top:0;color:#3276b1;font-weight:200;text-shadow:0 1px 2px #191A1B, 0 1px 0 #191A1B'}
+            %span.glyphicon.glyphicon-globe
+            Our Company
+          %p{:style => 'font-weight:300;font-size:20px'} We believe in your success. Contact us today to discuss how our staffing solutions can save.
+          %p
+            %a.btn.btn-primary{:href => "/about", :style => 'margin-top:30%;float:right;margin-right:-12%'}
+              Read More
+              %span.entypo-right-open
+
+  .row{:style => 'margin-top:5%'}
+    %h2{:style => 'margin-top:-3%;color:#3276b1;font-weight:200;margin-bottom:5%;text-shadow:0 1px 2px #191A1B, 0 1px 0 #191A1B;margin-bottom:2%'}
+      %span.entypo-thumbs-up
+      Success Stories
+    .row
+      .col-2
+        = image_tag 'success_logo.jpg'
+      .col-10
+        %p{:style => 'font-size:18px;font-style:italic'}
+          "Newtimes staffing agency has been a tremendous part of our success. Their speed in fulfilling our temporary staffing needs cannot be met by any other agency. If you are a business with fluctuating labour requirements, we highly recommend contacting Newtimes. They are reliable."
+
+:css
+  .layers {
+        background-image: -webkit-gradient(linear, center top, center bottom, from(#fcfcfc), to(#bfbfbf), color-stop(3%, #f7f7f7), color-stop(12%, #f2f2f2), color-stop(90%, #d9d9d9));
+        background-image: -webkit-linear-gradient(top, #fcfcfc, #f7f7f7 3%, #f2f2f2 12%, #d9d9d9 90%, #bfbfbf);
+        background-image: -moz-linear-gradient(top, #fcfcfc, #f7f7f7 3%, #f2f2f2 12%, #d9d9d9 90%, #bfbfbf);
+        background-image: -o-linear-gradient(top, #fcfcfc, #f7f7f7 3%, #f2f2f2 12%, #d9d9d9 90%, #bfbfbf);
+        background-image: -ms-linear-gradient(top, #fcfcfc, #f7f7f7 3%, #f2f2f2 12%, #d9d9d9 90%, #bfbfbf);
+        background-image: linear-gradient(to bottom, #fcfcfc, #f7f7f7 3%, #f2f2f2 12%, #d9d9d9 90%, #bfbfbf);
+        -webkit-box-shadow: 0 0 3px rgba(140,140,140,0.75);
+        -moz-box-shadow: 0 0 3px rgba(140,140,140,0.75);
+        box-shadow: 0 0 3px rgba(140,140,140,0.75);
+
+      }
+   .normalize-layer {padding:1%;margin-bottom:2%;background:#fff}
